@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Modelo.Empleado">
+    <Position X="3.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAABAAQAAACEAAAAgAAAAAAAAgAAAAIAAAAAAAA=</HashCode>
+      <FileName>Entidades\Empleado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Modelo.ProductoNoPerecedero" Collapsed="true">
+    <Position X="13" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAACAAAAAA=</HashCode>
+      <FileName>Entidades\ProductoNoPerecedero.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Modelo.ProductoPerecedero" Collapsed="true">
+    <Position X="10.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entidades\ProductoPerecedero.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Modelo.Producto">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAARABAAAQBQAACAAAAAgAAAgAAAAIAAAAAQAAAAAAA=</HashCode>
+      <FileName>Entidades\Producto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Modelo.RepositorioEmpleado" Collapsed="true">
+    <Position X="1.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQAAABQAAQAQIAAAAAAAgAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Repositorios\RepositorioEmpleado.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Empleados" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Modelo.RepositorioProducto" Collapsed="true">
+    <Position X="11.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAQAgRAAAAACAAAAgAAAAAAAAAAAAAAAAAMAAA=</HashCode>
+      <FileName>Repositorios\RepositorioProducto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Modelo.RepositorioItemVenta" Collapsed="true">
+    <Position X="7.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAQAAAAAAAAAACAAAAAAAIgAAAAIAAAAAAEAAA=</HashCode>
+      <FileName>Repositorios\RepositorioItemVenta.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="repositorioProductos" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="ItemVentas" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Modelo.Venta">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAABAAgAAQAgBAACAAAAAgAAgAAIBIAACAAAAAAA=</HashCode>
+      <FileName>Entidades\Venta.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Cliente" />
+      <Property Name="Descuento" />
+      <Property Name="Empleado" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="ItemVentas" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Modelo.ItemVenta">
+    <Position X="8" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAEAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entidades\ItemVenta.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Producto" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Modelo.Cliente">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAABACQAAAAkAAAAAAAAAAAAAAAAAAAAAgAAAAI=</HashCode>
+      <FileName>Entidades\Cliente.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Modelo.Descuento">
+    <Position X="9.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAQAAAAEEAAAAAAAgAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entidades\Descuento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
